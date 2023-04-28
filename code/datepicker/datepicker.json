@@ -7,18 +7,18 @@
 	"license": "",
 	"id": "nkappler.datepicker",
 	"version": "2.5.1",
-	"icon": "https://widgets.nkappler.de/datepicker/docs/calendarBlue.svg",
+	"icon": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/calendarBlue.svg",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "nkappler-date-picker",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.5.1/webcomponent.js",
+			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/webcomponent.js",
 			"integrity": "sha256-jJpzt24iMUjSBPE/JBgZQKCVnL63eemKZ55akPEwweI="
 		},
 		{
 			"kind": "styling",
 			"tag": "nkappler-datepicker-aps",
-			"url": "https://widgets.nkappler.de/datepicker/releases/2.5.1/aps_webcomponent.js",
+			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/aps_webcomponent.js",
 			"integrity": "sha256-aKf5wGDj7feNa6NDPHoiQZ+gnlHmt3hZ9Zn1yynrGGI="
 		}
 	],
