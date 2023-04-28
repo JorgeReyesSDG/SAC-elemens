@@ -3,7 +3,7 @@
 	"description": "Hello World",
 	"newInstancePrefix": "mycustomwidget",
 	"eula": "",
-	"vendor": "PranavKandpal",
+	"vendor": "JorgeReyesSDG",
 	"license": "",
 	"id": "mycustomwidget",
 	"version": "1.0.1",
@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "custom-button",
-			"url": "https://kandpalpranav.github.io/CustomWidget/Webcomponent.js",
+			"url": "https://jorgereyessdg.github.io/SAC-elemens/code/test1/Webcomponent.js",
 			"integrity": ""	,
 			"ignoreIntegrity": true
 			
