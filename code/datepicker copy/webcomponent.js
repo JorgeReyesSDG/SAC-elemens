@@ -8,6 +8,7 @@
         constructor() {
             super();
             this.init();
+            this.checkForUpdates();
         }
 
         async checkForUpdates() {
@@ -81,7 +82,7 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://jorgereyessdg.github.io/SAC-elemens/main/code/datepicker/${value ? "dark" : "light"}.css`);
+            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/main/code/datepicker/${value ? "dark" : "light"}.css`);
             // this.querySelector("link").setAttribute("href", `https://widgets.nkappler.de/datepicker/releases/${version}/${value ? "dark" : "light"}.css`);
         }
 
