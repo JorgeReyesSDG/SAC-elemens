@@ -3,37 +3,37 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <style>
-        nkappler-datepicker-aps * {
+        jorge-datepicker-aps * {
             box-sizing: border-box;
         }
-        nkappler-datepicker-aps > p {
+        jorge-datepicker-aps > p {
             margin: 16px 0 4px 0;
             line-height: 22px;
             font-size: 0.875rem;
             color: #999999;
         }
-        nkappler-datepicker-aps > p:first-of-type {
+        jorge-datepicker-aps > p:first-of-type {
             margin-top: 0;
         }
-        nkappler-datepicker-aps > label {
+        jorge-datepicker-aps > label {
             color: #333333 !important;
             font-size: 0.875rem;
         }
-        nkappler-datepicker-aps select {
+        jorge-datepicker-aps select {
             border: 1px solid rgb(191, 191, 191);
             padding: 3px 5px;
             width: calc(100% + 20px);
         }
-        nkappler-datepicker-aps select:hover,
-        nkappler-datepicker-aps select:focus {
+        jorge-datepicker-aps select:hover,
+        jorge-datepicker-aps select:focus {
             border: 1px solid #346187;
             cursor: pointer;
         }
-        nkappler-datepicker-aps > div.select {
+        jorge-datepicker-aps > div.select {
             position: relative;
             overflow: hidden;
         }
-        nkappler-datepicker-aps > div.select::after {
+        jorge-datepicker-aps > div.select::after {
             content: "\ue7ac";
             font-family: "fpa-icons";
             color: #346187;
@@ -47,26 +47,26 @@
             border-right: 1px solid rgb(191, 191, 191);
             pointer-events: none;
         }
-        nkappler-datepicker-aps > div.select:focus-within::after,
-        nkappler-datepicker-aps > div.select:hover::after {
+        jorge-datepicker-aps > div.select:focus-within::after,
+        jorge-datepicker-aps > div.select:hover::after {
             background-color: rgba(179, 179, 179, 0.5);
             border: 1px solid #346187;
             border-left-color: transparent;
         }
-        nkappler-datepicker-aps .checkbox {
+        jorge-datepicker-aps .checkbox {
             position: relative;
             display: flex;
             align-items: center;
             height: 22px;
         }
-        nkappler-datepicker-aps .checkbox input {
+        jorge-datepicker-aps .checkbox input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
             height: 0;
             width: 0;
         }
-        nkappler-datepicker-aps .checkbox div.checkmark {
+        jorge-datepicker-aps .checkbox div.checkmark {
             position: relative;
             height: 16px;
             width: 16px;
@@ -74,11 +74,11 @@
             border: 0.125rem solid #bfbfbf;
             margin-right: 0.5rem;
         }
-        nkappler-datepicker-aps .checkbox div.checkmark:hover {
+        jorge-datepicker-aps .checkbox div.checkmark:hover {
             cursor: pointer;
             border-color: #427cac;
         }
-        nkappler-datepicker-aps .checkbox input:checked ~ div.checkmark:after {
+        jorge-datepicker-aps .checkbox input:checked ~ div.checkmark:after {
             content: "\ue614";
             font-family: "fpa-icons";
             color: #427cac;
@@ -90,10 +90,10 @@
             align-items: center;
             justify-content: center;
         }
-        nkappler-datepicker-aps .checkbox input:focus ~ div.checkmark {
+        jorge-datepicker-aps .checkbox input:focus ~ div.checkmark {
             outline: 1px dotted #333;
         }
-        nkappler-datepicker-aps p.info {
+        jorge-datepicker-aps p.info {
             background-color: #e78c0744;
             border: 1px solid #e78c07;
             white-space: normal;
@@ -156,17 +156,17 @@
 
         async _checkForUpdates() {
             try {
-                const contribution = await (await fetch("http://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
-                if (contribution.version > version) {
-                    const updateInfo = document.createElement("div");
-                    updateInfo.innerHTML = `
-                        <p class="info">
-                            A newer version of this Custom Widget is available.
-                            Please contact your system administrator
-                        </p>
-                    `;
-                    this.prepend(updateInfo);
-                }
+                // const contribution = await (await fetch("http://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
+                // if (contribution.version > version) {
+                //     const updateInfo = document.createElement("div");
+                //     updateInfo.innerHTML = `
+                //         <p class="info">
+                //             A newer version of this Custom Widget is available.
+                //             Please contact your system administrator
+                //         </p>
+                //     `;
+                //     this.prepend(updateInfo);
+                // }
             } catch (error) { }
         }
 
@@ -229,5 +229,5 @@
         }
     }
 
-    customElements.define('nkappler-datepicker-aps', DatePickerAps);
+    customElements.define('jorge-datepicker-aps', DatePickerAps);
 })();

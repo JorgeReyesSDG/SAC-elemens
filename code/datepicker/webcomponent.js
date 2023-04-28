@@ -1,7 +1,8 @@
 (function () {
     let version = "2.5.1";
     let tmpl = document.createElement('template');
-    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://widgets.nkappler.de/datepicker/releases/${version}/light.css"/>`;
+    tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/main/code/datepicker/light.css"/>`;
+    // tmpl.innerHTML = `<link rel="stylesheet" type="text/css" href="https://widgets.nkappler.de/datepicker/releases/${version}/light.css"/>`;
 
     class DatePicker extends HTMLElement {
         constructor() {
@@ -12,10 +13,10 @@
 
         async checkForUpdates() {
             try {
-                const contribution = await (await fetch("https://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
-                if (contribution.version > version) {
-                    console.log("A newer version of the Datepicker Custom Widget is available. Please contact your system administrator");
-                }
+                // const contribution = await (await fetch("https://widgets.nkappler.de/datepicker/releases/latest/datepicker.json")).json();
+                // if (contribution.version > version) {
+                //     console.log("A newer version of the Datepicker Custom Widget is available. Please contact your system administrator");
+                // }
             } catch (error) { }
         }
 
@@ -81,7 +82,8 @@
         }
 
         set darktheme(value) {
-            this.querySelector("link").setAttribute("href", `https://widgets.nkappler.de/datepicker/releases/${version}/${value ? "dark" : "light"}.css`);
+            this.querySelector("link").setAttribute("href", `https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/main/code/datepicker/${value ? "dark" : "light"}.css`);
+            // this.querySelector("link").setAttribute("href", `https://widgets.nkappler.de/datepicker/releases/${version}/${value ? "dark" : "light"}.css`);
         }
 
         set enablerange(value) {
@@ -128,5 +130,5 @@
         }
     }
 
-    customElements.define('nkappler-date-picker', DatePicker);
+    customElements.define('jorge-date-picker', DatePicker);
 })();

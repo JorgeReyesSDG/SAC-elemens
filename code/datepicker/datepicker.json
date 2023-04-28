@@ -3,23 +3,25 @@
 	"description": "The Datepicker Custom Widget provides a sophisticated input field for date values and date ranges. The date formatting is customizable and a dark mode is provided.",
 	"newInstancePrefix": "Datepicker",
 	"eula": "",
-	"vendor": "Nikolaj Kappler",
+	"vendor": "JorgeReyesSDG",
 	"license": "",
-	"id": "nkappler.datepicker",
+	"id": "jorge.datepicker",
 	"version": "2.5.1",
-	"icon": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/calendarBlue.svg",
+	"icon": "https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/37f9b7fe8f0eabf590e3ebe8dafb381a4619f514/code/datepicker/calendarBlue.svg",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "nkappler-date-picker",
-			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/webcomponent.js",
-			"integrity": "sha256-jJpzt24iMUjSBPE/JBgZQKCVnL63eemKZ55akPEwweI="
+			"tag": "jorge-date-picker",
+			"url": "https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/main/code/datepicker/webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
-			"tag": "nkappler-datepicker-aps",
-			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/tree/main/code/aps_webcomponent.js",
-			"integrity": "sha256-aKf5wGDj7feNa6NDPHoiQZ+gnlHmt3hZ9Zn1yynrGGI="
+			"tag": "jorge-datepicker-aps",
+			"url": "https://raw.githubusercontent.com/JorgeReyesSDG/SAC-elemens/main/code/datepicker/aps_webcomponent.js",
+			"integrity": "",
+			"ignoreIntegrity": true
 		}
 	],
 	"properties": {
