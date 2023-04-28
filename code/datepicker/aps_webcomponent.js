@@ -106,6 +106,7 @@
         <div class="select">
             <select id="select">
                 <option name="aps_format" value="">Automatic</option>
+                <option name="aps_format" value="MM-YYYY">MM-YYYY</option>
                 <option name="aps_format" value="YYYY-MM-dd">YYYY-MM-DD</option>
                 <option name="aps_format" value="MM/dd/YYYY">MM/DD/YYYY</option>
                 <option name="aps_format" value="dd.MM.YYYY">DD.MM.YYYY</option>
