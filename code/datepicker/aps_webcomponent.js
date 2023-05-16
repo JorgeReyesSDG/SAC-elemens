@@ -1,5 +1,5 @@
 (function () {
-    let version = "2.5.1";
+    let version = "3.0.0";
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
     `<button type="button" id="myBtn">Helper Button</button>` ;   
