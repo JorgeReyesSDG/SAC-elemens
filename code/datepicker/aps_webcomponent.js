@@ -126,7 +126,15 @@
         constructor() {
             super();
             this.appendChild(tmpl.content.cloneNode(true));
+            // Create the HTML element
+            const element = document.createElement('div');
 
+            // Set attributes or properties of the element
+            element.id = 'myElement';
+            element.textContent = 'Hello, World!';
+
+            // Append the element to the desired parent element
+            this.appendChild(element);
             if (sap.ui.getCore().byId("dateMin")) {
                 sap.ui.getCore().byId("dateMin").destroy();
             }
