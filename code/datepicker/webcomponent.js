@@ -24,24 +24,7 @@
             if (!this.querySelector("link")) {
                 this.appendChild(tmpl.content.cloneNode(true));
             }
-            var ctor = sap.m.DatePicker;
-            if (this._enablerange) { ctor = sap.m.DateRangeSelection; }
-            this.DP = new ctor({
-                change: function () {
-                    this.fireChanged();
-                    this.dispatchEvent(new Event("onChange"));
-                }.bind(this)
-            }).addStyleClass("datePicker");
-            if (this._format) {
-                this.DP.setDisplayFormat(this._format);
-            }
-            if (this._minDate) {
-                this.updateMinDate();
-            }
-            if (this._maxDate) {
-                this.updateMaxDate();
-            }
-            this.DP.placeAt(this);
+            
         }
 
         fireChanged() {
