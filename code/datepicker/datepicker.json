@@ -6,7 +6,7 @@
 	"vendor": "JorgeReyesSDG",
 	"license": "",
 	"id": "jorge.datepicker",
-	"version": "2.5.1",
+	"version": "3.0.0",
 	"icon": "https://jorgereyessdg.github.io/SAC-elemens/code/datepicker/calendarBlue.svg",
 	"webcomponents": [
 		{
