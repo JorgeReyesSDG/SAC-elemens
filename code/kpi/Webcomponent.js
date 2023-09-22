@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<div id="chartContainer"></div>` ;   
+    `<div id="comparisonChartDiv"></div>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
@@ -22,7 +22,7 @@
                 });
 
                 // Attach the chart to the HTML element
-            const chartContainer = shadowRoot.getElementById("comparisonChart");
+            const chartContainer = shadowRoot.getElementById("comparisonChartDiv");
             comparisonChart.placeAt(chartContainer);
 
 
