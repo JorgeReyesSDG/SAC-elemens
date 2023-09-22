@@ -3,7 +3,7 @@
     tmpl.innerHTML = 
     `<div id="comparisonChartDiv"></div>` ;   
    
-    class PerformanceHelp extends HTMLElement {
+    class KPIElement extends HTMLElement {
         constructor() {
             super();
             this.init();           
@@ -17,7 +17,7 @@
             // inherit sap object
                 // Create the ComparisonMicroChart
             const comparisonChart = new sap.suite.ui.microchart.ComparisonMicroChart({
-                id: "comparisonChart", // Assign an ID to the chart
+                id: "comparisonChartDiv", // Assign an ID to the chart
                     // Set other chart properties and data here
                 });
 
@@ -41,5 +41,5 @@
         
     }
 
-    customElements.define('custom-button', PerformanceHelp);
+    customElements.define('kpi-custom-widgets', KPIElement);
 })();

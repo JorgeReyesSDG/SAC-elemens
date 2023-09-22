@@ -1,17 +1,17 @@
 {
 	"name": "KPIwithComparison",
-	"description": "Hello World",
+	"description": "KPI to be tested",
 	"newInstancePrefix": "KPIwithComparison",
 	"eula": "",
 	"vendor": "JorgeReyesSDG",
 	"license": "",
 	"id": "KPIwithComparison",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"icon": "",
 	"webcomponents": [
 		{
 			"kind": "main",
-			"tag": "custom-button",
+			"tag": "kpi-custom-widgets",
 			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/blob/main/code/kpi/Webcomponent.js",
 			"integrity": ""	,
 			"ignoreIntegrity": true
