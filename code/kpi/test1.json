@@ -1,18 +1,18 @@
 {
-	"name": "mycustomwidget",
+	"name": "KPIwithComparison",
 	"description": "Hello World",
-	"newInstancePrefix": "mycustomwidget",
+	"newInstancePrefix": "KPIwithComparison",
 	"eula": "",
 	"vendor": "JorgeReyesSDG",
 	"license": "",
-	"id": "mycustomwidget",
-	"version": "1.0.1",
+	"id": "KPIwithComparison",
+	"version": "1.0.0",
 	"icon": "",
 	"webcomponents": [
 		{
 			"kind": "main",
 			"tag": "custom-button",
-			"url": "https://jorgereyessdg.github.io/SAC-elemens/code/test1/Webcomponent.js",
+			"url": "https://github.com/JorgeReyesSDG/SAC-elemens/blob/main/code/kpi/Webcomponent.js",
 			"integrity": ""	,
 			"ignoreIntegrity": true
 			
