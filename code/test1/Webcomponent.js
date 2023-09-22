@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<div id="comparisonChartDiv">Div</div>` ;   
+    `<div id="comparisonChartDiv">Div Container</div>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
