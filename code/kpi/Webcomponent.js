@@ -16,14 +16,11 @@
 
             // inherit sap object
                 // Create the ComparisonMicroChart
-            const comparisonChart = new sap.suite.ui.microchart.ComparisonMicroChart({
-                id: "comparisonChartDiv", // Assign an ID to the chart
-                    // Set other chart properties and data here
-                });
+            const tile = sap.m.GenericTile('tileUniqueID');
 
                 // Attach the chart to the HTML element
-            const chartContainer = shadowRoot.getElementById("comparisonChartDiv");
-            comparisonChart.placeAt(chartContainer);
+            // const chartContainer = shadowRoot.getElementById("comparisonChartDiv");
+            // comparisonChart.placeAt(chartContainer);
 
 
             // functionallity
