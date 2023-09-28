@@ -16,7 +16,7 @@
 
             // inherit sap object
                 // Create the ComparisonMicroChart
-            const tile = sap.m.GenericTile('tileUniqueID');
+            //const tile = sap.m.GenericTile('tileUniqueID');
 
                 // Attach the chart to the HTML element
             // const chartContainer = shadowRoot.getElementById("comparisonChartDiv");
