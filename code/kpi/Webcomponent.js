@@ -11,8 +11,8 @@
 
         init() {            
             // shadow dom
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            // let shadowRoot = this.attachShadow({mode: "open"});
+            // shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
             // inherit sap object
                 // Create the ComparisonMicroChart
