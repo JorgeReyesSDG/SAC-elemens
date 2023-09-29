@@ -51,7 +51,10 @@
             this.addEventListener("click", event => {
                 console.log('click');
             });
-        }  
+        } 
+        onCustomWidgetAfterUpdate(changedProperties) {
+            loadthis(this);
+        }
 
         _firePropertiesChanged() {
             this.password = "";
@@ -64,9 +67,7 @@
             }));
         }
 
-        onCustomWidgetAfterUpdate(changedProperties) {
-            loadthis(this);
-        }
+        
 
     }
     
@@ -84,10 +85,14 @@
             "use strict";
 
             //### Controller ###
-            sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
+            sap.ui.define([
+                "jquery.sap.global",
+                "sap/ui/core/mvc/Controller"
+            ], function (jQuery, Controller) {
                 "use strict";
 
-                var Component = UIComponent.extend("sap.m.sample.GenericTileAsKPITile.Component", {
+                var Component = 
+                UIComponent.extend("sap.m.sample.GenericTileAsKPITile.Component", {
                     metadata: {
                         manifest: "json"
                     }
