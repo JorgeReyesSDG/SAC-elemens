@@ -10,7 +10,7 @@
     "webcomponents": [
       {
         "kind": "main",
-        "tag": "com-fd-djaja-sap-sac-inputpassword",
+        "tag": "jorge-custom-sap-kpi_test",
         "url": "https://jorgereyessdg.github.io/SAC-elemens/code/kpi_test/kpi.js",
         "integrity": "",
         "ignoreIntegrity": true
