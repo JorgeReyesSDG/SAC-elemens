@@ -63,7 +63,7 @@
                 }
             }));
         }
-        
+
         onCustomWidgetAfterUpdate(changedProperties) {
             loadthis(this);
         }
@@ -84,28 +84,15 @@
             "use strict";
 
             //### Controller ###
-            sap.ui.define([
-                "jquery.sap.global",
-                "sap/ui/core/mvc/Controller"
-            ], function(jQuery, Controller) {
+            sap.ui.define(['sap/ui/core/UIComponent'], function (UIComponent) {
                 "use strict";
 
-                return Controller.extend("myView.Template", {
-                    onButtonPress: function(oEvent) {
-                        _password = oView.byId("passwordInput").getValue();
-                        that._firePropertiesChanged();
-                        console.log(_password);
-
-                        this.settings = {};
-                        this.settings.password = "";
-
-                        that.dispatchEvent(new CustomEvent("onStart", {
-                            detail: {
-                                settings: this.settings
-                            }
-                        }));
-                    } 
+                var Component = UIComponent.extend("sap.m.sample.GenericTileAsKPITile.Component", {
+                    metadata: {
+                        manifest: "json"
+                    }
                 });
+                return Component;
             });
 
             //### THE APP: place the XMLView somewhere into DOM ###
