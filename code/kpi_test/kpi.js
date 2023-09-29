@@ -25,6 +25,7 @@
 							id="passwordInput"
 							type="Password"
 							placeholder="Enter password ..." liveChange="onButtonPress"/>
+                        <Div>Testing<Div/>
 					</l:content>
 				</l:VerticalLayout>
 			</mvc:View>
