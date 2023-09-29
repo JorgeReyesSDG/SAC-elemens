@@ -199,8 +199,8 @@
                 "sap/ui/core/mvc/Controller"
             ], function(jQuery, Controller) {
                 "use strict";
-                var Component = 
-                Controller.extend("myView.Template", {
+
+                return Controller.extend("myView.Template", {
                     onButtonPress: function(oEvent) {
                         _password = oView.byId("passwordInput").getValue();
                         that._firePropertiesChanged();
@@ -216,7 +216,6 @@
                         }));
                     } 
                 });
-                return Component;
             });
 
             //### THE APP: place the XMLView somewhere into DOM ###
