@@ -1,5 +1,5 @@
 {
-    "id": "com.fd.djaja.sap.sac.kpi_test",
+    "id": "jorge.custom.sap.kpi_test",
     "version": "0.0.2",
     "name": "kpi_test",
     "vendor": "JorgeReyesSDG",
@@ -10,7 +10,7 @@
     "webcomponents": [
       {
         "kind": "main",
-        "tag": "com-fd-djaja-sap-sac-inputpassword",
+        "tag": "jorge-custom-sap-kpi_test",
         "url": "https://jorgereyessdg.github.io/SAC-elemens/code/kpi_test/kpi.js",
         "integrity": "",
         "ignoreIntegrity": true
