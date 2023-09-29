@@ -92,7 +92,7 @@
                 "use strict";
 
                 var Component = 
-                UIComponent.extend("sap.m.sample.GenericTileAsKPITile.Component", {
+                Controller.extend("myView.Template", {
                     metadata: {
                         manifest: "json"
                     }
