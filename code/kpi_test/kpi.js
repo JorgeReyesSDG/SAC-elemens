@@ -88,14 +88,24 @@
             sap.ui.define([
                 "jquery.sap.global",
                 "sap/ui/core/mvc/Controller"
-            ], function (jQuery, Controller) {
+            ], function(jQuery, Controller) {
                 "use strict";
-
                 var Component = 
                 Controller.extend("myView.Template", {
-                    metadata: {
-                        manifest: "json"
-                    }
+                    onButtonPress: function(oEvent) {
+                        _password = oView.byId("passwordInput").getValue();
+                        that._firePropertiesChanged();
+                        console.log(_password);
+
+                        this.settings = {};
+                        this.settings.password = "";
+
+                        that.dispatchEvent(new CustomEvent("onStart", {
+                            detail: {
+                                settings: this.settings
+                            }
+                        }));
+                    } 
                 });
                 return Component;
             });
