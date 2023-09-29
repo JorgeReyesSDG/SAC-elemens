@@ -65,7 +65,7 @@
         }
 
     }
-    customElements.define("jorge-custom-sap-kpi_test", InputPassword);
+    customElements.define("com-fd-djaja-sap-sac-inputpassword", InputPassword);
 
     // UTILS
     function loadthis(that) {
