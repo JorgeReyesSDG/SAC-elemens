@@ -31,7 +31,7 @@
         </script>        
     `;
 
-    class InputPassword extends HTMLElement {
+    class CustomKPI extends HTMLElement {
 
         constructor() {
             super();
@@ -71,7 +71,7 @@
 
     }
     
-    customElements.define("jorge-custom-sap-kpi_test", InputPassword);
+    customElements.define("jorge-custom-sap-kpi_test", CustomKPI);
 
     // UTILS
     function loadthis(that) {
@@ -108,7 +108,7 @@
                     } 
                 });
             });
-            
+
             //### THE APP: place the XMLView somewhere into DOM ###
             var oView  = sap.ui.xmlview({
                 viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
