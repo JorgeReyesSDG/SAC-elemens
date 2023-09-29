@@ -1,10 +1,10 @@
 {
-    "id": "com.fd.djaja.sap.sac.inputpassword",
+    "id": "com.fd.djaja.sap.sac.kpi_test",
     "version": "0.0.2",
-    "name": "inputPassword",
+    "name": "kpi_test",
     "vendor": "JorgeReyesSDG",
-    "description": "Input Password",
-    "newInstancePrefix": "inputPassword",
+    "description": "kpi_test",
+    "newInstancePrefix": "kpi_test",
 	"icon": "https://jorgereyessdg.github.io/SAC-elemens/code/datepicker/calendarBlue.svg",
     "imports": [ "input-controls" ],
     "webcomponents": [
