@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.restapi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "restAPI",
   "description": "restAPI",
   "newInstancePrefix": "restAPI",
@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-restapi",
-      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sacrestapi/restapi.js",
+      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/SACRESTAPICustomWidget-master/restapi.json",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-fd-djaja-sap-sac-restapi-aps",
-      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sacrestapi/restapi_aps.js",
+      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/SACRESTAPICustomWidget-master/restapi_aps.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
