@@ -182,3 +182,11 @@
     --text-single-100-regular-line-height: 18px;
     --text-single-100-regular-font-style: normal;
   }
+  h2 {
+    color: #3498db; /* Change text color to a shade of blue */
+    font-size: 24px; /* Increase font size to 24 pixels */
+    padding: 10px; /* Add padding of 10 pixels */
+    border: 1px solid #3498db; /* Add a border with the same color as text */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    text-align: center; /* Center-align text */
+}
