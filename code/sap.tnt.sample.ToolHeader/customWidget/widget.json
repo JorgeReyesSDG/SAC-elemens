@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
