@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
@@ -33,6 +33,9 @@
     },
     "selection":{
       "type": "string"
+    },
+    "userName":{
+      "type": "string"
     }
   },
   "methods": {
@@ -41,6 +44,17 @@
 			"description": "Recover the selection",
 			"parameters": [],
 			"body": "return this.selection || undefined;"
+		},
+    "setUserName": {
+			"description": "User Name",
+			"parameters": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "The displayed user name"
+				}
+			],
+			"body": "this.userName = name;"
 		}
   },
 	"events": {
