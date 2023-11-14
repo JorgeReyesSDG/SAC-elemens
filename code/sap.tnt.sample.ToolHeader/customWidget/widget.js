@@ -1,12 +1,11 @@
 (function () {
     let _id;
+    let url = "https://jorgereyessdg.github.io/SAC-elemens/code/sap.tnt.sample.ToolHeader/customWidget/";
 
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
-      <link rel="stylesheet" type="text/css" href="https://jorgereyessdg.github.io/SAC-elemens/code/sap.tnt.sample.ToolHeader/customWidget/widget.css"/>
-      <h2>
-    TEST
-    <h2>
+      <link rel="stylesheet" type="text/css" href="${url}widget.css"/>
+
     `;
 
     class CustomHeader extends HTMLElement {
@@ -20,7 +19,7 @@
 
         // Other lifecycle methods and custom logic
 
-        
+
     }
 
     customElements.define("com-fd-djaja-sap-sac-header", CustomHeader);
