@@ -1,26 +1,20 @@
 (function () {
     let tmpl = document.createElement("template");
-    tmpl.innerHTML = `
-      <style>
-          h2 {
-              font-size: 18px;
-              margin-bottom: 10px;
-          }
-      </style>
-      <h2>My Widget Settings</h2>
-    `;
+    tmpl.innerHTML = 
+    `<button type="button" id="myBtn">Helper Button</button>` ;   
 
-    class MyWidgetAps extends HTMLElement {
-        constructor() {
+    class CustomHeaderAps extends HTMLElement {
+       constructor() {
             super();
-            this._shadowRoot = this.attachShadow({ mode: "open" });
-            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this.init();
         }
 
-        connectedCallback() {
-            // Add any additional initialization logic here
+        init() {            
+              
+            let shadowRoot = this.attachShadow({mode: "open"});
+            shadowRoot.appendChild(tmpl.content.cloneNode(true));     
         }
     }
 
-    customElements.define("com-fd-djaja-sap-sac-header-aps", MyWidgetAps);
+    customElements.define("com-fd-djaja-sap-sac-header-aps", CustomHeaderAps);
 })();
