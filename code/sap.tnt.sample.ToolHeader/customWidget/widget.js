@@ -1,25 +1,28 @@
 (function () {
-    let _shadowRoot;
     let _id;
-
 
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
       <style>
+        /* Your styles go here */
       </style>
     `;
 
-    class customHeader extends HTMLElement {
+    class CustomHeader extends HTMLElement {
         constructor() {
             super();
-            _shadowRoot = this.attachShadow({ mode: "open" });
-            _shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this.attachShadow({ mode: "open" });
+            this.shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
             _id = createGuid();
         }
+
+        // Other lifecycle methods and custom logic
+
+        
     }
 
-    customElements.define("com-fd-djaja-sap-sac-header", customHeader);
+    customElements.define("com-fd-djaja-sap-sac-header", CustomHeader);
 
     function createGuid() {
         return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
