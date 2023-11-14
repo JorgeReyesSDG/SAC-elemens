@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
@@ -13,100 +13,28 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-header",
-      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.m.sample.GenericTileAsKPITile/widget.js",
+      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.tnt.sample.ToolHeader/customWidget/widget.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-fd-djaja-sap-sac-header-aps",
-      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.m.sample.GenericTileAsKPITile/widget_aps.js",
+      "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.tnt.sample.ToolHeader/customWidget/widget_aps.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
   ],
   "properties": {
-    "metadata": {
-      "type": "string",
-      "description": "For internal use",
-      "default": ""
-    },
-    "restapiurl": {
-      "type": "string",
-      "description": "The REST API URL",
-      "default": "https://c4cconfigurationengine-tst.goodyear.eu/lambda/mymeta_marketingagreement_members?id=1120"
-    },
     "name": {
       "type": "string",
       "description": "widget name",
       "default": ""
-    },
-    "score": {
-      "type": "string",
-      "description": "score",
-      "default": ""
     }
   },
   "methods": {
-    "getRestAPIUrl": {
-      "returnType": "string",
-      "description": "Get the REST API URL",
-      "parameters": [      
-      ],
-      "body": "return this.restapiurl;"
-    },
-    "setRestAPIUrl": {
-      "description": "Set the REST API URL",
-      "parameters": [
-        {
-          "name": "value",
-          "type": "string",
-          "description": "The new REST API URL"
-        }
-      ],
-      "body": "this.restapiurl = value;"
-    },
-    "getScore": {
-      "returnType": "string",
-      "description": "Get the score",
-      "parameters": [
-      ],
-      "body": "return this.score;"
-    },
-    "setScore": {
-      "description": "Set the score",
-      "parameters": [
-        {
-          "name": "value",
-          "type": "string",
-          "description": "The new score"
-        }
-      ],
-      "body": "this.score = value;"
-    },
-    "getName": {
-      "returnType": "string",
-      "description": "Get widget name",
-      "parameters": [
-        
-      ],
-      "body": "return this.name;"
-    },
-    "setName": {
-      "description": "Set widget name",
-      "parameters": [
-        {
-          "name": "value",
-          "type": "string",
-          "description": "The new widget name"
-        }
-      ],
-      "body": "this.name = value;"
-    }
+    
   },
   "events": {
-    "onStart": {
-      "description": "onStart events trigger"
-    }
   }
 }
