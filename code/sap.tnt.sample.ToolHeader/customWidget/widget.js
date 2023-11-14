@@ -48,7 +48,7 @@
         }
 
         getSelection() {
-            return this.selection || undefined;
+            return this.selection;
         }
 
     }
