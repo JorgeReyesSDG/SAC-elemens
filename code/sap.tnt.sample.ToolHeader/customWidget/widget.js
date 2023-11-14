@@ -12,8 +12,8 @@
     class customHeader extends HTMLElement {
         constructor() {
             super();
-            shadowRoot = this.attachShadow({ mode: "open" });
-            shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            _shadowRoot = this.attachShadow({ mode: "open" });
+            _shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
             _id = createGuid();
         }
