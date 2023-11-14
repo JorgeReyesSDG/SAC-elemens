@@ -19,7 +19,7 @@
             <div class="master-secondary"><button class="button-text">Login</button></div>
             <div class="master-primary"><button class="div">Get started</button></div>
         </div>
-        <img class="logo-style-guide-top" src="${url}resources/icon.svg" />
+        <img class="logo-style-guide-top" src="${url}resources/logo.svg" />
         </div>
     `;
 
