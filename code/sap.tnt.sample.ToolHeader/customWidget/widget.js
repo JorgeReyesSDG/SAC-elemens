@@ -3,9 +3,7 @@
 
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
-      <style>
-        /* Your styles go here */
-      </style>
+      <link rel="stylesheet" type="text/css" href="https://jorgereyessdg.github.io/SAC-elemens/code/sap.tnt.sample.ToolHeader/customWidget/widget.css"/>
       <h2>
     TEST
     <h2>
