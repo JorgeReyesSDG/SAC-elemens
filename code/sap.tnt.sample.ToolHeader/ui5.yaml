@@ -1,0 +1,12 @@
+specVersion: '3.0'
+metadata:
+  name: sap-tnt-sample--tool-header
+type: application
+framework:
+  name: SAPUI5
+  version: '1.119.1'
+  libraries:
+    - name: themelib_sap_horizon
+    - name: sap.ui.core
+    - name: sap.tnt
+    - name: sap.m
