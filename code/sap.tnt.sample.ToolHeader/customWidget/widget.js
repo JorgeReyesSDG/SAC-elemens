@@ -6,6 +6,9 @@
       <style>
         /* Your styles go here */
       </style>
+      <h2>
+    TEST
+    <h2>
     `;
 
     class CustomHeader extends HTMLElement {
