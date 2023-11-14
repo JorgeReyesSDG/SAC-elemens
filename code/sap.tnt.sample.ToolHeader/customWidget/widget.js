@@ -5,7 +5,22 @@
     let tmpl = document.createElement("template");
     tmpl.innerHTML = `
       <link rel="stylesheet" type="text/css" href="${url}widget.css"/>
-
+      <div class="header">
+        <div class="nav-list">
+            <div class="sections">
+                <div class="text-wrapper">Home</div>
+                <div class="text-wrapper">About</div>
+                <div class="link-list">
+                    <div class="text-wrapper">Resources</div>
+                    <img class="vector" src="${url}arrowDown.svg" />
+                </div>
+                <div class="text-wrapper">Contact</div>
+            </div>
+            <div class="master-secondary"><button class="button-text">Login</button></div>
+            <div class="master-primary"><button class="div">Get started</button></div>
+        </div>
+        <img class="logo-style-guide-top" src="${url}icon.svg" />
+        </div>
     `;
 
     class CustomHeader extends HTMLElement {
