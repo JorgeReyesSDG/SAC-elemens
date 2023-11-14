@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
@@ -37,7 +37,7 @@
   },
   "methods": {
     "getSelection": {
-			"returnType": "String",
+			"returnType": "string",
 			"description": "Recover the selection",
 			"parameters": [],
 			"body": "return this.selection || undefined;"

@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement("template");
     tmpl.innerHTML = 
-    `<button type="button" id="myHeaderBtn">v 31</button>` ;   
+    `<button type="button" id="myHeaderBtn">v 32</button>` ;   
 
     class CustomHeaderAps extends HTMLElement {
        constructor() {
