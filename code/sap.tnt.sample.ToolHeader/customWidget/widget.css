@@ -1,3 +1,10 @@
+/* main colors*/
+:root {
+    --main-color: #004EA8;
+    --main-light: #ffffff;
+  }
+
+
 .header {
     position: relative;
     width: 1012px;
@@ -39,6 +46,15 @@
     letter-spacing: 0;
     line-height: 12.7px;
     white-space: nowrap;
+
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+  }
+
+  .header .text-wrapper:hover {
+    background-color: var(--main-color);
+    color: var(--main-light);
+    border-radius: 8px; /* Adjust the value as needed */
   }
   
   .header .link-list {
@@ -182,11 +198,3 @@
     --text-single-100-regular-line-height: 18px;
     --text-single-100-regular-font-style: normal;
   }
-  h2 {
-    color: #3498db; /* Change text color to a shade of blue */
-    font-size: 24px; /* Increase font size to 24 pixels */
-    padding: 10px; /* Add padding of 10 pixels */
-    border: 1px solid #3498db; /* Add a border with the same color as text */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    text-align: center; /* Center-align text */
-}
