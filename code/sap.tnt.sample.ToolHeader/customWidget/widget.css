@@ -7,7 +7,7 @@
 
 .header {
     position: relative;
-    width: 1012px;
+    width: 100%;
     height: 83px;
     background-color: var(--neutral-colorswhite);
   }
@@ -103,7 +103,7 @@
     padding: 12.65px 16.87px;
     position: relative;
     flex: 0 0 auto;
-    background-color: var(--neutral-colorswhite);
+    background-color: var(--main-light);
     border-radius: 21.09px;
     border: 0.7px solid;
     border-color: var(--neutral-colorscolor-600);
@@ -115,7 +115,7 @@
     margin-top: -0.7px;
     font-family: "DM Sans-Regular", Helvetica;
     font-weight: 400;
-    color: var(--neutral-colorsheadings-black);
+    color: var(var(--main-color));
     font-size: 11.2px;
     text-align: center;
     letter-spacing: 0;
@@ -133,7 +133,7 @@
     padding: 12.65px 16.87px;
     position: relative;
     flex: 0 0 auto;
-    background-color: var(--neutral-colorsheadings-black);
+    background-color: var(--main-color);
     border-radius: 21.09px;
   }
   
