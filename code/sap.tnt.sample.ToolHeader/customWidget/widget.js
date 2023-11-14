@@ -41,11 +41,8 @@
         // Other lifecycle methods and custom logic
         menuSelection(menuId) {
             console.log(menuId);
-            this.dispatchEvent(new CustomEvent('onSelection', {
-                detail: {
-                    selection: menuId
-                }
-            }));
+            this.selection = menuId;
+            this.dispatchEvent(new Event('onSelection'));
         }
 
     }

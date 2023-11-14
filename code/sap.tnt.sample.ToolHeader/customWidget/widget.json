@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.28",
+  "version": "0.0.30",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
@@ -30,21 +30,23 @@
       "type": "string",
       "description": "widget name",
       "default": ""
+    },
+    "selection":{
+      "type": "string"
     }
   },
   "methods": {
-    
+    "getSelection": {
+			"returnType": "String",
+			"description": "Recover the selection",
+			"parameters": [],
+			"body": "return this.selection || undefined;"
+		}
   },
 	"events": {
 		"onSelection": {
-			"description": "Called when the user select an option for the relink",
-      "parameters": [
-				{
-					"name": "selection",
-					"type": "string",
-					"description": "Selection Done"
-				}
-			]
+			"description": "Called when the user select an option for the relink"
+    
     }
 	}
 }
