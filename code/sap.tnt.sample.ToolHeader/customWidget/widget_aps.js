@@ -118,5 +118,5 @@
             }
         }
     }
-    customElements.define("com-fd-djaja-sap-sac-restapi-aps", restAPIAps);
+    customElements.define("com-fd-djaja-sap-sac-widget-aps", restAPIAps);
 })();

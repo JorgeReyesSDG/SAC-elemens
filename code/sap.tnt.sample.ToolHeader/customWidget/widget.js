@@ -190,7 +190,7 @@
         }
 
     }
-    customElements.define("com-fd-djaja-sap-sac-restapi", restAPI);
+    customElements.define("com-fd-djaja-sap-sac-header", restAPI);
 
     function UI5(changedProperties, that) {
         var that_ = that;

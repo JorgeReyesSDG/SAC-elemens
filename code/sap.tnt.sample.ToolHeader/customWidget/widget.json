@@ -1,9 +1,9 @@
 {
-  "id": "com.fd.djaja.sap.sac.restapi",
-  "version": "0.0.4",
+  "id": "com.fd.djaja.sap.sac.header",
+  "version": "0.0.5",
   "name": "Header",
-  "description": "restAPI",
-  "newInstancePrefix": "restAPI",
+  "description": "header",
+  "newInstancePrefix": "header",
   "icon": "",
   "vendor": "Jorge",
   "eula": "",
@@ -12,14 +12,14 @@
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "com-fd-djaja-sap-sac-restapi",
+      "tag": "com-fd-djaja-sap-sac-header",
       "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.m.sample.GenericTileAsKPITile/widget.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
-      "tag": "com-fd-djaja-sap-sac-restapi-aps",
+      "tag": "com-fd-djaja-sap-sac-header-aps",
       "url": "https://jorgereyessdg.github.io/SAC-elemens/code/sap.m.sample.GenericTileAsKPITile/widget_aps.js",
       "integrity": "",
       "ignoreIntegrity": true
