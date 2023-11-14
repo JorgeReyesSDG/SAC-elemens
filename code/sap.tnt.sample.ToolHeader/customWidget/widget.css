@@ -24,8 +24,9 @@
     white-space: nowrap;
     all: unset;
     box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   }
-  
+
   .header .logo-style-guide-top {
     position: absolute;
     width: 184px;
@@ -99,13 +100,18 @@
     align-items: center;
     justify-content: flex-end;
     gap: 5.62px;
-    padding: 12.65px 16.87px;
+    padding: 8px 16px;
     position: relative;
     flex: 0 0 auto;
     background-color: var(--main-light);
     border-radius: 21.09px;
     border: 0.7px solid;
     border-color: var(--main-color);
+  }
+  .header .master-secondary:hover{
+      background-color: var(--main-color);
+      color: var(--main-light);
+      border-color: var(--main-color);
   }
   
   .header .button-text {
@@ -129,13 +135,18 @@
     align-items: center;
     justify-content: flex-end;
     gap: 5.62px;
-    padding: 12.65px 16.87px;
+    padding: 8px 16px;
     position: relative;
     flex: 0 0 auto;
     color: var(--main-light);
     background-color: var(--main-color);
     border-radius: 21.09px;
   }
+.header .master-primary:hover {
+    background-color: var(--main-light);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
   
 
 
