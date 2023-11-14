@@ -41,7 +41,7 @@
         // Other lifecycle methods and custom logic
         menuSelection(menuId) {
             console.log(menuId);
-            this.selection = menuId;
+            this.selection = menuId.toString();
             this.dispatchEvent(new Event('onSelection', {
                 detail: {
                     selection: menuId

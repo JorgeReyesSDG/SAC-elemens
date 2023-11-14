@@ -1,8 +1,4 @@
 /* main colors*/
-:root {
-    --main-color: #004EA8;
-    --main-light: #f8f8f8;
-  }
 
 
 .header {
@@ -10,6 +6,8 @@
     width: 100%;
     height: 83px;
     background-color: var(--neutral-colorswhite);
+    --main-color: #004EA8;
+    --main-light: #ffffff;
   }
   .header .div {
     position: relative;
@@ -115,7 +113,7 @@
     margin-top: -0.7px;
     font-family: "DM Sans-Regular", Helvetica;
     font-weight: 400;
-    color: var(var(--main-color));
+    color: var(--main-color);
     font-size: 11.2px;
     text-align: center;
     letter-spacing: 0;
