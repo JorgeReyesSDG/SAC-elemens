@@ -1,6 +1,6 @@
 {
   "id": "com.fd.djaja.sap.sac.header",
-  "version": "0.0.25",
+  "version": "0.0.27",
   "name": "Header",
   "description": "header",
   "newInstancePrefix": "header",
@@ -35,6 +35,9 @@
   "methods": {
     
   },
-  "events": {
-  }
+	"events": {
+		"onSelection": {
+			"description": "Called when the user select an option for the relink"
+		}
+	}
 }

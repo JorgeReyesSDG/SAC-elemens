@@ -42,7 +42,7 @@
         // Other lifecycle methods and custom logic
         menuSelection(menuId) {
             console.log(menuId);
-            // You can perform additional actions based on the clicked menu item here
+            this.dispatchEvent(new Event("onSelection"));
         }
 
     }
