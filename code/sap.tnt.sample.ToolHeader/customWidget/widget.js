@@ -49,6 +49,10 @@
             }));
         }
 
+        getSelection() {
+            return this.selection || undefined;
+        }
+
     }
 
     customElements.define("com-fd-djaja-sap-sac-header", CustomHeader);
