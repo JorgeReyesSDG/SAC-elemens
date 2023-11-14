@@ -30,10 +30,20 @@
             this.shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
             _id = createGuid();
+            const textWrappers = this.shadowRoot.querySelectorAll('.text-wrapper');
+            textWrappers.forEach((wrapper) => {
+                wrapper.addEventListener('click', () => {
+                    const menuId = wrapper.getAttribute('data-menu-id');
+                    this.menuSelection(menuId);
+                });
+            });
         }
 
         // Other lifecycle methods and custom logic
-
+        menuSelection(menuId) {
+            console.log(menuId);
+            // You can perform additional actions based on the clicked menu item here
+        }
 
     }
 
