@@ -70,14 +70,15 @@
     line-height: 12.7px;
     white-space: nowrap;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Adjust the duration as needed */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Adjust the duration as needed */
     padding: 4px 8px; /* Adjust the padding as needed */
 }
 
 .header .text-wrapper:hover {
     background-color: var(--main-color);
     color: var(--main-light);
-    border-radius: 8px; /* Adjust the value as needed */
+     /* Adjust the value as needed */
 }
   
   .header .link-list {

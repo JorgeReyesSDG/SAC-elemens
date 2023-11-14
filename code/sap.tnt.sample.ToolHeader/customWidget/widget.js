@@ -42,7 +42,9 @@
         menuSelection(menuId) {
             console.log(menuId);
             this.selection = menuId.toString();
+            console.log('selection changed');
             this.dispatchEvent(new Event('onSelection'));
+            console.log(this.selection)
         }
 
         getSelection() {
