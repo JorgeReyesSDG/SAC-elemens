@@ -42,7 +42,11 @@
         menuSelection(menuId) {
             console.log(menuId);
             this.selection = menuId;
-            this.dispatchEvent(new Event('onSelection'));
+            this.dispatchEvent(new Event('onSelection', {
+                detail: {
+                    selection: menuId
+                }
+            }));
         }
 
     }
