@@ -31,10 +31,9 @@
 
             _id = createGuid();
             const textWrappers = this.shadowRoot.querySelectorAll('.text-wrapper');
-            textWrappers.forEach((wrapper) => {
+            textWrappers.forEach((wrapper, key) => {
                 wrapper.addEventListener('click', () => {
-                    const menuId = wrapper.getAttribute('data-menu-id');
-                    this.menuSelection(menuId);
+                    this.menuSelection(key);
                 });
             });
         }
@@ -42,7 +41,11 @@
         // Other lifecycle methods and custom logic
         menuSelection(menuId) {
             console.log(menuId);
-            this.dispatchEvent(new Event("onSelection"));
+            this.dispatchEvent(new CustomEvent('onSelection', {
+                detail: {
+                    selection: menuId
+                }
+            }));
         }
 
     }
